@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+﻿
+const newPost = (post) => {
+    ...post,
+    addedAt: Date(),
+})
+console.table(newPost)
+VM6934:2 Uncaught SyntaxError: Rest parameter must be last formal parameter
+const newPost = (post) => {
+    ...post,
+    addedAt: Date(),
+}
+console.table(newPost)
+VM6942:2 Uncaught SyntaxError: Rest parameter must be last formal parameter
+const newPost = () => {
+    ...post,
+    addedAt = Date(),
+}
+const firstPost = {
+    id: 1,
+    author: 'Bob',
+}
+newPost(firstPost)
+VM7030:2 Uncaught SyntaxError: Rest parameter must be last formal parameter
+const post = {
+    id: 1,
+    author: 'Bob'
+}
+const newPost = {
+    ...post,
+    newPost.addedAt = Date()
+}
+console.log(newPost)
+VM7262:7 Uncaught SyntaxError: Unexpected token '.'
+const post = {
+    id: 1,
+    author: 'Bob'
+}
+const newPost = {
+    ...post,
+    addedAt = Date()
+}
+console.log(newPost)
+VM7284:7 Uncaught SyntaxError: Invalid shorthand property initializer
+const post = {
+    id: 1,
+    author: 'Bob'
+}
+const newPost = {
+    ...post,
+    addedAt = () => Date()
+}
+console.log(newPost)
+VM7307:7 Uncaught SyntaxError: Invalid shorthand property initializer
+const post = {
+    id: 1,
+    author: 'Bob'
+}
+const newPost = (addedAt = Date()) =>{
+    ...post,
+    addedAt: addedAt,
+        return addedAt
+}
+console.log(newPost)
+VM7474:6 Uncaught SyntaxError: Rest parameter must be last formal parameter
+const post = {
+    id: 1,
+    author: 'Bob'
+}
+console.log(post)
+VM7556:5 
+{id: 1, author: 'Bob'}
+undefined
+newPost = (addedAt = Date()) =>{
+    ...post,
+    addedAt: addedAt,
+    return addedAt
+}
+console.log(newPost)
+  
+</body>
+</html>
