@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<h1>VM2219:12 Uncaught SyntaxError: Unexpected identifier 'color'
+const buttonInfo = {
+    text: 'Buy'
+}
+const buttonStyle = {
+    color: 'yellow',
+    width: 200,
+    height: 300
+}
+const button = {
+    ...buttonInfo,
+    ...buttonStyle
+    width: 400
+}
+console.table(button)
+VM2247:12 Uncaught SyntaxError: Unexpected identifier 'width'
+//слияние двух объектов в один новый объект путем разбития их на свойства с помощью оператора ...
+const buttonInfo = {
+    text: 'Buy'
+}
+const buttonStyle = {
+    color: 'yellow',
+    width: 200,
+    height: 300
+}
+const button = {
+    ...buttonInfo,
+    ...buttonStyle
+}
+console.table(button)// 
+const hello  = 'Hello'
+const world = 'World'
+const greeting = hello + ' ' + world
+VM2717:14 
+(index)
+Value
+text	'Buy'
+color	'yellow'
+width	200
+height	300
+Object
+undefined
+console.log(greeting)
+VM2777:1 Hello World
+undefined
+// конкатенация строк через оператор + 
+const hello  = 'Hello'
+const world = 'World'
+const greeting = hello + ' ' + world
+console.log(greeting)
+Hello World//
+const myName = 'Sam'
+const city = 'Boston'
+const sentence = `${меня зовут} ${myName} ${.Я живу в городе} ${city}`
+console.log(sentence)
+VM3343:6 Uncaught SyntaxError: Unexpected identifier 'World'
+const myName = 'Sam'
+const city = 'Boston'
+const sentence = `${меня зовут} ${myName} ${.Я живу в городе} ${city}`
+console.log(sentence)
+VM3347:3 Uncaught SyntaxError: Missing } in template expression
+const myName = 'Sam'
+const city = 'Boston'
+const sentence = `${myName} ${city}`
+console.log(sentence)
+VM3379:4 Sam Boston
+undefined
+const myName = 'Sam'
+const city = 'Boston.'
+const m = 'Меня зовут'
+const n = 'Я живу в городе'
+const sentence = `${m} ${myName} ${n} ${city}`
+console.log(sentence)
+VM3565:6 Меня зовут Sam Я живу в городе Boston.
+undefined
+const myName = 'Sam'
+const city = 'Boston'
+const sentence = 'Меня зовут' `${myName}`. 'Я живу в городе' `${city}`.
+console.log(sentence)
+VM3888:3 Uncaught SyntaxError: Unexpected string
+const myName = 'Sam'
+const city = 'Boston'
+const sentence = 'Меня зовут' `${myName}`. 'Я живу в городе' + `${city}`.
+console.log(sentence)
+VM3946:3 Uncaught SyntaxError: Unexpected string
+Selection deleted
+10 + 'Bob'
+'10Bob'</h1>
+</body>
+</html>
