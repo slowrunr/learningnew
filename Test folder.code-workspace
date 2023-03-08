@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../m1-Metrika/styles"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Test folder"
+	}
+}
